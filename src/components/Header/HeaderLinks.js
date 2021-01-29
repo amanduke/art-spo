@@ -116,14 +116,17 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
+
+        <Button justIcon round color="white">
+                  <Search className={classes.searchIcon} />
+                  
+      </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <CustomInput
           white
           inputRootCustomClasses={classes.inputRootCustomClasses}
-          formControlProps={{
-            className: classes.formControl
-          }}
+          formControlProps={{className: classes.formControl}}
           inputProps={{
             placeholder: "Search",
             inputProps: {
@@ -132,9 +135,7 @@ export default function HeaderLinks(props) {
             }
           }}
         />
-     <Button justIcon round color="white">
-                  <Search className={classes.searchIcon} />
-                </Button>
+     
       </ListItem>
     </List>
   );
